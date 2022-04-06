@@ -1,0 +1,141 @@
+.background-dest {
+  background: url("/src/assets/destination/background-destination-mobile.jpg")
+    no-repeat center center/cover;
+  position: fixed;
+  top:70;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: -2;
+}
+.part1-dest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.part1-dest p {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.part1-dest span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.img {
+  background:  no-repeat center
+    center/cover;
+  width: 170px;
+  height: 170px;
+}
+.moon{
+  background-image: url("/src/assets/destination/image-moon.png");
+}
+.mars{
+  background-image: url("/src/assets/destination/image-mars.png");
+}
+.europa{
+  background-image: url("/src/assets/destination/image-europa.png");
+}
+.titan{
+  background-image: url("/src/assets/destination/image-titan.png");
+}
+.nav-dest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+.nav-dest li {
+  text-transform: uppercase;
+  margin-top: 26px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  cursor: pointer;
+}
+.nav-dest a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    margin: 16px;
+    padding-bottom: 8px;
+}
+
+.part2-dest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.part2-dest h1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.part2-dest p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  margin: 24px;
+  margin-top: 0;
+  color: #d0d6f9;
+}
+
+.line-dest {
+  display: block;
+  width: 85%;
+  height: 2px;
+  background-color: #383b4b;
+}
+
+.travelInfo {
+  text-align: center;
+  display: flex;
+}
+.travelInfo p {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.distance,
+.time {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+}
+
+.active {
+    border-bottom: 3px solid #fff;
+}
+

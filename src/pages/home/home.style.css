@@ -1,10 +1,11 @@
 .background {
   background: url("/src/assets/home/background-home-mobile.jpg") no-repeat
-    center center;
+    center center/cover;
   position: fixed;
-  background-size: cover;
+  top:0;
   height: 100%;
-  width: 100%;
+  overflow-y: scroll;
+  z-index: -2;
 }
 
 .container {
@@ -12,7 +13,8 @@
   padding-right: 24px !important;
 }
 .position {
-  margin-top: 3rem;
+  margin-top: 7rem;
+  margin-bottom: 40px;
 }
 
 .content {
@@ -20,6 +22,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  height: 276px;
 }
 
 .content div.travel {
@@ -85,9 +89,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 156px;
   }
   .content {
-    margin-top: 200px;
+    margin-top: 90px;
     width: 450px;
     height: 334px;
     align-items: center;

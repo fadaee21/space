@@ -6,6 +6,8 @@ import { Destination } from "./pages/destination/Destination";
 import { Crew } from "./pages/crew/Crew";
 import { Technology } from "./pages/technology/Technology";
 
+
+
 function App() {
   return (
     <BrowserRouter>
