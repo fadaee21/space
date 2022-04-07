@@ -9,7 +9,7 @@ const Dest = () => {
         <>
             {Array(match).map((item, index) => {
                 const { name, content, distance, travelTime } = item;
-                return <div key={index} >
+                return <div className='dest-component' key={index} >
                     <h1>{name}</h1>
                     <p>{content}</p>
                     <span className="line-dest"></span>

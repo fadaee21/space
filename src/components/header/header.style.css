@@ -1,18 +1,15 @@
 .navHead {
-  padding-left: 24px !important;
-  padding-right: 24px !important;
-  background: url("/src/assets/home/background-home-mobile.jpg") no-repeat
-    center center fixed;
-  background-size: cover;
-  height: 100%;
   width: 100%;
-  top: 0;
+  position: absolute;
+  top: 33px;
+  right: 0;
 }
 .header {
-  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .header > :first-child img {
@@ -85,9 +82,17 @@ li span {
 }
 
 @media screen and (min-width: 546px) {
-  .header {
-    height: 96px;
+  .navHead {
+    top: 24px;
   }
+  .header{
+    padding-left: .9375rem;
+  }
+  .header > :first-child img {
+    width: 48px;
+    height: 48px;
+  }
+
   .header > :nth-child(2) {
     display: none;
   }
@@ -104,25 +109,23 @@ li span {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 100%;
     margin-top: 0;
     padding: 0;
   }
   .listItem span {
     display: none;
   }
+  .listItem li {
+    margin-bottom: -30px;
+  }
 
   .listItem a {
     display: inline-block;
     margin: 18px;
-    padding-top: 36px;
     padding-bottom: 36px;
   }
 
-  .navHead {
-    background: url("/src/assets/home/background-home-tablet.jpg");
-    filter: brightness(1.15);
-  }
   .active {
     border-bottom: 3px solid #fff !important ;
     font-weight: 400;
@@ -133,12 +136,16 @@ li span {
 
 @media screen and (min-width: 1200px) {
   .navHead {
-    background: url("/src/assets/home/background-home-desktop.jpg") no-repeat
-      center center fixed;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    justify-content: flex-start;
     height: 96px;
+    margin-top: 16px;
+  }
+  .header {
     height: 100%;
-    width: 100%;
+    margin-left: 3rem;
   }
   .slideMenu {
     margin-top: 40px;
@@ -152,20 +159,12 @@ li span {
     display: inline-block;
   }
   .line {
-    position: absolute;
-    width: 35%;
-    height: 1px;
-    left: 10%;
-    top: 88px;
-    z-index: 100;
+    width: 30%;
+    height: 2px;
     background: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.25;
+    z-index: 5;
   }
-  .header img {
-    margin-left: 21px;
-    width: 48px;
-    height: 48px;
-    margin-top: 84px;
-  }
+  
 }
