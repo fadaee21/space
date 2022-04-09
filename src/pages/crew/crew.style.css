@@ -1,0 +1,123 @@
+.background-crew {
+  background: url("/src/assets/crew/background-crew-mobile.jpg") no-repeat
+    center center/cover;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  filter: brightness(1.15);
+}
+
+.crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.5rem;
+}
+.crew-p {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.crew-p p {
+  display: inline;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.crew-p span {
+  padding-right: 18px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.crew-img {
+  background: no-repeat center center/contain;
+  width: 20.5rem;
+  height: 14rem;
+  z-index: 2;
+  margin-top: 32px;
+  border-bottom: 1px solid #383b4b;
+}
+.crew-content {
+  text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 2rem;
+}
+
+.dotdot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.17;
+  border-radius: 50%;
+  margin: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.active {
+  opacity: 1 !important;
+}
+.title {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+.name {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+margin-bottom: 1rem;
+  color: #ffffff;
+}
+.explanation {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #d0d6f9;
+}
