@@ -1,12 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './crew.style.css'
 import { Header } from '../../components/header/Header'
 import data from './data-crew.json'
-import image from '../../assets/crew/image-douglas-hurley.png'
 export const Crew = () => {
   const [slide, setSlide] = useState(0)
-  console.log(slide)
   const astronaut = data[slide]
+  console.log(slide)
+  useEffect(() => {
+    const slideTimer = setTimeout(() => {
+      slide === 3
+        ? setSlide(0)
+        : setSlide((count) => count + 1)
+    }, 3000);
+    const stopper = document.querySelector(".crew-content")
+    const handleAlert = () => { return clearTimeout(slideTimer) }
+    stopper.addEventListener("mouseenter", handleAlert)
+    return () => clearTimeout(slideTimer)
+  })
+
   return (
     <div className='background-crew'>
       <div className="container">
@@ -16,23 +27,20 @@ export const Crew = () => {
             <span>02</span>
             <p>Meet your crew</p>
           </div>
-          <div className="crew-img" 
-          style={{backgroundImage: `url(${process.env.PUBLIC_URL + '../../assets/crew/image-douglas-hurley.png'})` }}
-          ></div>
-
-{console.log(image)}
-
-
           {[astronaut].map((person) => {
-            console.log(person)
-            const { title, name, explanation, id } = person;
+            const { title, name, explanation, id, image } = person;
             return (
               <div key={id} className="crew-content">
+                <img className='crew-img' src={image} alt={name} />
                 <div className="dotdot">
-                  <span onClick={()=>setSlide(0)}  className='active'></span>
-                  <span onClick={()=>setSlide(1)} ></span>
-                  <span onClick={()=>setSlide(2)} ></span>
-                  <span onClick={()=>setSlide(3)} ></span>
+                  <span onClick={() => setSlide(0)}
+                    className={slide === 0 ? "active" : ""}></span>
+                  <span onClick={() => setSlide(1)}
+                    className={slide === 1 ? "active" : ""} ></span>
+                  <span onClick={() => setSlide(2)}
+                    className={slide === 2 ? "active" : ""} ></span>
+                  <span onClick={() => setSlide(3)}
+                    className={slide === 3 ? "active" : ""}></span>
                 </div>
                 <div className="title">{title} </div>
                 <div className="name">{name}</div>

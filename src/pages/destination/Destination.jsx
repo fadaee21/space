@@ -18,7 +18,8 @@ import { Header } from '../../components/header/Header'
 
 export const Destination = () => {
 
-  const [travel, setTravel] = useState("moon")
+  const [imageName, setImageName] = useState("moon")
+  const imageSource = (data.find(e => e.name === imageName)).image
   const history = useHistory()
   useEffect(() => {
     history.push('/destination/moon')
@@ -29,21 +30,21 @@ export const Destination = () => {
       <div className="container">
         <Header />
         <div className="position-dest">
-        <div className="part1-dest  ">
-          <p> <span>01</span> Pick your destination</p>
-          <div className={`img ${travel}`}></div>
-        </div>
-        <div className="part2-dest ">
-          <ul className='nav-dest'>
-            {data.map((item) => {
-              const { id, name } = item
-              return <li key={id} >  <NavLink to={`/destination/${name}`} onClick={() => setTravel(name)} >{name}</NavLink> </li>
-            })}
-          </ul>
-          <Switch>
-            <Route path="/destination/:name" component={Dest} />
-          </Switch>
-        </div>
+          <div className="part1-dest  ">
+            <p> <span>01</span> Pick your destination</p>
+            <img className='img' src={imageSource} alt="" />
+          </div>
+          <div className="part2-dest ">
+            <ul className='nav-dest'>
+              {data.map((item) => {
+                const { id, name } = item;
+                return <li key={id} >  <NavLink to={`/destination/${name}`} onClick={() => setImageName(name)} >{name}</NavLink> </li>
+              })}
+            </ul>
+            <Switch>
+              <Route path="/destination/:name" component={Dest} />
+            </Switch>
+          </div>
         </div>
       </div>
     </div>

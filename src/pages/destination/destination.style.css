@@ -43,18 +43,7 @@
   border-radius: 50%;
   box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
 }
-.moon {
-  background-image: url("/src/assets/destination/image-moon.png");
-}
-.mars {
-  background-image: url("/src/assets/destination/image-mars.png");
-}
-.europa {
-  background-image: url("/src/assets/destination/image-europa.png");
-}
-.titan {
-  background-image: url("/src/assets/destination/image-titan.png");
-}
+
 .nav-dest {
   display: flex;
   justify-content: center;
