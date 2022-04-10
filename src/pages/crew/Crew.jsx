@@ -5,7 +5,6 @@ import data from './data-crew.json'
 export const Crew = () => {
   const [slide, setSlide] = useState(0)
   const astronaut = data[slide]
-  console.log(slide)
   useEffect(() => {
     const slideTimer = setTimeout(() => {
       slide === 3
@@ -22,33 +21,39 @@ export const Crew = () => {
     <div className='background-crew'>
       <div className="container">
         <Header />
-        <div className="crew">
-          <div className="crew-p">
-            <span>02</span>
-            <p>Meet your crew</p>
-          </div>
-          {[astronaut].map((person) => {
-            const { title, name, explanation, id, image } = person;
-            return (
-              <div key={id} className="crew-content">
-                <img className='crew-img' src={image} alt={name} />
-                <div className="dotdot">
-                  <span onClick={() => setSlide(0)}
-                    className={slide === 0 ? "active" : ""}></span>
-                  <span onClick={() => setSlide(1)}
-                    className={slide === 1 ? "active" : ""} ></span>
-                  <span onClick={() => setSlide(2)}
-                    className={slide === 2 ? "active" : ""} ></span>
-                  <span onClick={() => setSlide(3)}
-                    className={slide === 3 ? "active" : ""}></span>
+        {[astronaut].map((person) => {
+          const { title, name, explanation, id, image } = person;
+          return (
+            <div className='crew-content-image'>
+              <div className="crew">
+                <div className="crew-p">
+                  <span>02</span>
+                  <p>Meet your crew</p>
                 </div>
-                <div className="title">{title} </div>
-                <div className="name">{name}</div>
-                <p className="explanation">{explanation}</p>
+                <div key={id} className="crew-content">
+                  <div className="dotdot">
+                    <span onClick={() => setSlide(0)}
+                      className={slide === 0 ? "activeDot" : ""}></span>
+                    <span onClick={() => setSlide(1)}
+                      className={slide === 1 ? "activeDot" : ""} ></span>
+                    <span onClick={() => setSlide(2)}
+                      className={slide === 2 ? "activeDot" : ""} ></span>
+                    <span onClick={() => setSlide(3)}
+                      className={slide === 3 ? "activeDot" : ""}></span>
+                  </div>
+                  <div className="title">{title} </div>
+                  <div className="name">{name}</div>
+                  <p className="explanation">{explanation}</p>
+                </div>
               </div>
-            )
-          })}
-        </div>
+              <div className="crew-p-mobile">
+                <span>02</span>
+                <p>Meet your crew</p>
+              </div>
+              <img className='crew-img' src={image} alt={name} />
+            </div>
+          )
+        })}
       </div>
     </div>
   )

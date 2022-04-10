@@ -1,12 +1,19 @@
 .background-crew {
-  background: url("/src/assets/crew/background-crew-mobile.jpg") no-repeat
-    center center/cover;
+  background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485819/space/crew/background-crew-mobile_uwayoe.jpg")
+    no-repeat center center/cover;
   position: fixed;
   top: 0;
   height: 100vh;
   width: 100%;
-  overflow-y: scroll;
-  filter: brightness(1.15);
+  filter: brightness(1.3);
+}
+.crew-content-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.5rem;
+  height: 100%;
 }
 
 .crew {
@@ -14,9 +21,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5.5rem;
 }
-.crew-p {
+.crew-p-mobile {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -24,32 +30,24 @@
   line-height: 19px;
   letter-spacing: 2.7px;
   text-transform: uppercase;
-
   color: #ffffff;
+  order: -2;
 }
-.crew-p p {
+.crew-p-mobile p {
   display: inline;
   font-family: "Barlow Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
-.crew-p span {
+.crew-p-mobile span {
   padding-right: 18px;
   font-family: "Barlow Condensed";
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
-  color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.25;
+}
+.crew-p {
+  display: none;
 }
 
 .crew-img {
@@ -57,11 +55,19 @@
   height: 14rem;
   margin-top: 32px;
   border-bottom: 1px solid #383b4b;
+  order: -1;
 }
 .crew-content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 12px;
   margin-right: 12px;
+  margin-bottom: 2rem;
+}
+.dotdot {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -74,11 +80,9 @@
   opacity: 0.17;
   border-radius: 50%;
   margin: 0.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   cursor: pointer;
 }
-.active {
+.activeDot {
   opacity: 1 !important;
 }
 .title {
@@ -100,11 +104,9 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  /* identical to box height */
-
   text-align: center;
   text-transform: uppercase;
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
   color: #ffffff;
 }
 .explanation {
@@ -113,9 +115,152 @@ margin-bottom: 1rem;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  /* or 167% */
-
   text-align: center;
 
   color: #d0d6f9;
+}
+
+@media screen and (min-width: 546px) {
+  .background-crew {
+    background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485823/space/crew/background-crew-tablet_ljnhxs.jpg")
+      no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    height: 110vh;
+    width: 100%;
+    overflow-y: auto;
+    filter: brightness(1.3);
+  }
+
+  .crew {
+    margin-top: 8.5rem;
+    margin-bottom: 0;
+  }
+  .crew-p {
+    display: block;
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+
+    font-family: "Barlow Condensed";
+    font-style: normal;
+
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .crew-p p {
+    display: inline;
+    font-family: "Barlow Condensed";
+    text-transform: uppercase;
+  }
+
+  .crew-p span {
+    padding-right: 18px;
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+
+  .crew-p-mobile {
+    display: none;
+  }
+
+  .crew-img {
+    order: 10;
+    height: 27rem;
+    border: 0;
+    margin-bottom: 0;
+    object-fit: contain;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .name {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .explanation {
+    font-size: 16px;
+    line-height: 28px;
+    width: 37rem;
+    height: 5.25rem;
+  }
+  .crew-content {
+    margin-top: 2.75rem;
+    margin-bottom: 0;
+  }
+  .dotdot {
+    order: 4;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background-crew {
+    background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485821/space/crew/background-crew-desktop_vvltek.jpg")
+      no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    height: 110vh;
+    width: 100%;
+    overflow-y: auto;
+    filter: brightness(1.3);
+  }
+  .crew-content-image {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    padding-left: 3rem;
+  }
+
+  .crew {
+    height: 70vh;
+    justify-content: space-between;
+  }
+  .crew-p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    align-self: flex-start;
+
+    letter-spacing: 4.725px;
+  }
+  .crew-img {
+    height: 65vh;
+  }
+  .crew-content {
+    align-items: flex-start;
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+  .explanation {
+    text-align: start;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 4rem;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 1rem;
+  }
+  .name {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 1.75rem;
+  }
+  .dotdot span {
+    width: 15px;
+    height: 15px;
+    margin-right: 1.5rem;
+  }
 }

@@ -247,5 +247,8 @@
   .distance {
     margin-right: 4.5rem;
   }
- 
+  .part1-dest img {
+    width: 445px;
+    height: 445px;
+  }
 }
