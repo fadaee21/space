@@ -81,7 +81,7 @@ li span {
   border-bottom: none !important ;
 }
 
-@media screen and (min-width: 546px) {
+@media screen and (min-width: 576px) {
   .navHead {
     top: 24px;
   }

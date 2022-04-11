@@ -64,7 +64,7 @@
   letter-spacing: 2px;
 }
 
-@media screen and (min-width: 546px) {
+@media screen and (min-width: 768px) {
   .background {
     background: url("/src/assets/home/background-home-tablet.jpg") no-repeat
       center center;
@@ -109,7 +109,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 576px) {
   .background {
     background: url("/src/assets/home/background-home-desktop.jpg") no-repeat
       center center fixed;

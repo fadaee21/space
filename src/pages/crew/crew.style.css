@@ -120,7 +120,7 @@
   color: #d0d6f9;
 }
 
-@media screen and (min-width: 546px) {
+@media screen and (min-width: 576px) {
   .background-crew {
     background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485823/space/crew/background-crew-tablet_ljnhxs.jpg")
       no-repeat center center/cover;

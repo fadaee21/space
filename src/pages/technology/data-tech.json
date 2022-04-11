@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "techTitle": "THE TERMINOLOGY…",
+        "techHeader": "LAUNCH VEHICLE",
+        "techExplanation": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+        "imageLandscape": "https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485833/space/technology/image-launch-vehicle-landscape_pcosyz.jpg",
+        "imagePortrait": "https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485832/space/technology/image-launch-vehicle-portrait_jnaxop.jpg"
+    },
+    {
+        "id": 2,
+        "techTitle": "THE TERMINOLOGY…",
+        "techHeader": "SPACEPORT",
+        "techExplanation": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
+        "imageLandscape": "https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485834/space/technology/image-spaceport-landscape_zpgihl.jpg",
+        "imagePortrait": "https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485831/space/technology/image-spaceport-portrait_guugs8.jpg"
+    },
+    {
+        "id": 3 ,
+        "techTitle": "THE TERMINOLOGY…",
+        "techHeader": "SPACE CAPSULE",
+        "techExplanation": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
+        "imageLandscape": "https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485833/space/technology/image-space-capsule-landscape_f93tf9.jpg",
+        "imagePortrait": "https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485833/space/technology/image-space-capsule-portrait_yzd8yc.jpg"
+    }
+]

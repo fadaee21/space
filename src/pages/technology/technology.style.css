@@ -1,0 +1,287 @@
+.background-tech {
+  background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485830/space/technology/background-technology-mobile_xexbrr.jpg")
+    no-repeat center center/cover;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tech-img {
+  margin-top: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tech-img img {
+  margin-top: 2rem;
+  height: 10.75rem;
+  width: 102vw;
+}
+.imagePortrait {
+  display: none;
+}
+.tech-p-desktop {
+  display: none;
+}
+
+.tech-img span {
+  padding-right: 18px;
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.tech-img p {
+  display: inline;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+}
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.number span {
+  width: 40px;
+  height: 40px;
+  display: block;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 1rem;
+  padding-top: 9px;
+}
+
+.active-num {
+  background-color: #fff;
+  color: #111 !important ;
+  opacity: 1 !important;
+}
+.tech-title {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 2.3625px;
+
+  color: #d0d6f9;
+}
+.tech-header {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0.5rem;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.tech-explanation {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 1rem;
+  text-align: center;
+  color: #d0d6f9;
+}
+
+@media screen and (min-width: 576px) {
+  .background-tech {
+    background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485832/space/technology/background-technology-tablet_lilm1p.jpg")
+      no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .tech-title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .tech-header {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .tech-explanation {
+    width: 28.7rem;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .imageLandscape {
+    height: 19.5rem;
+    margin-top: 3.5rem;
+  }
+  .tech-p > span:nth-child(1) {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .tech-p {
+    align-self: flex-start;
+    margin-left: 2.5rem;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+  }
+  .tech-img {
+    margin-top: 8.5rem;
+  }
+  .number {
+    margin-top: 3.625rem;
+  }
+  .number span {
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+    line-height: 40px;
+
+    /* identical to box height */
+    text-align: center;
+  }
+  .tech-img img {
+    margin-top: 3.625rem;
+    height: 19.375rem;
+  }
+  .tech-content {
+    margin-top: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background-tech {
+    background: url("https://res.cloudinary.com/dt63d2mtc/image/upload/v1649485831/space/technology/background-technology-desktop_yiqogu.jpg")
+      no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .imagePortrait {
+    display: block;
+  }
+  .imageLandscape {
+    display: none;
+  }
+  .tech-p-desktop {
+    display: block;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .tech-p-desktop p {
+    display: inline;
+    font-family: "Barlow Condensed";
+    text-transform: uppercase;
+  }
+  .tech-p-desktop span {
+    padding-right: 18px;
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+
+  .tech-p {
+    display: none;
+  }
+  .tech {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 59vh;
+  }
+  .number {
+    flex-direction: column;
+    margin: 0;
+  }
+  .tech-img {
+    order: 5;
+    margin-top: 0px;
+    align-items: flex-end;
+    height: 100%;
+    max-height: 527px;
+    min-height: 400px;
+  }
+  .tech-img img {
+    /* margin-top: 1.625rem; */
+    margin-top: 0 !important;
+    height: 100%;
+    width: auto;
+  }
+
+  .tech-explanation {
+    text-align: start;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0px;
+  }
+  .tech-header {
+    text-align: start;
+    font-size: 56px;
+    line-height: 64px;
+    margin-top: 11px;
+    margin-bottom: 17px;
+  }
+  .number span {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    line-height: 60px;
+  }
+
+  .tech-title {
+    text-align: start;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+  .margin-position {
+    margin-left: 11.5%;
+    margin-top: 14%;
+  }
+  .tech-content {
+    margin: 0;
+    margin-left: -3rem;
+    width: 30rem;
+    height: 19rem;
+  }
+}

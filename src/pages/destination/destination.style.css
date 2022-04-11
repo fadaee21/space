@@ -136,7 +136,7 @@
   border-bottom: 3px solid #fff;
 }
 
-@media screen and (min-width: 546px) {
+@media screen and (min-width: 576px) {
   .background-dest {
     background: url("/src/assets/destination/background-destination-tablet.jpg")
       no-repeat center center/cover;
