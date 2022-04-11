@@ -49,13 +49,18 @@
 .crew-p {
   display: none;
 }
-
 .crew-img {
-  background: no-repeat center center/contain;
-  height: 14rem;
-  margin-top: 32px;
-  border-bottom: 1px solid #383b4b;
   order: -1;
+  border-bottom: 2px solid #383b4b;
+  width: 90%;
+  text-align: center;
+}
+
+.crew-img img {
+  height: 14rem;
+  background: no-repeat center center/contain;
+
+  margin-top: 32px;
 }
 .crew-content {
   display: flex;
@@ -81,6 +86,10 @@
   border-radius: 50%;
   margin: 0.5rem;
   cursor: pointer;
+  transition: all 0.2s;
+}
+.dotdot span:hover {
+  opacity: 0.5;
 }
 .activeDot {
   opacity: 1 !important;
@@ -170,6 +179,9 @@
 
   .crew-img {
     order: 10;
+    border: none ;
+  }
+  .crew-img img {
     height: 27rem;
     border: 0;
     margin-bottom: 0;
@@ -233,7 +245,7 @@
 
     letter-spacing: 4.725px;
   }
-  .crew-img {
+  .crew-img img {
     height: 65vh;
   }
   .crew-content {
@@ -257,6 +269,7 @@
     font-size: 56px;
     line-height: 64px;
     margin-bottom: 1.75rem;
+    text-align: start;
   }
   .dotdot span {
     width: 15px;

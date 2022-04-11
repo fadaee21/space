@@ -10,7 +10,7 @@ export const Crew = () => {
       slide === 3
         ? setSlide(0)
         : setSlide((count) => count + 1)
-    }, 3000);
+    }, 6000);
     const stopper = document.querySelector(".crew-content")
     const handleAlert = () => { return clearTimeout(slideTimer) }
     stopper.addEventListener("mouseenter", handleAlert)
@@ -50,7 +50,9 @@ export const Crew = () => {
                 <span>02</span>
                 <p>Meet your crew</p>
               </div>
-              <img className='crew-img' src={image} alt={name} />
+              <div className='crew-img' >
+                <img src={image} alt={name} />
+              </div>
             </div>
           )
         })}

@@ -13,24 +13,24 @@ export const Header = () => {
     return (
 
 
-            <div className="navHead">
-                <div className="header">
-                    <Link to='/'> <img src={logo} alt="logo" onClick={handleSlide} /></Link>
-                    <img onClick={() => setSlide(true)} src={hamburger} alt="hamburger" />
-                </div>
-                <div className="line"></div>
-                <div className={`slideMenu ${slide ? "slideOn" : " "} `}>
-                    <img onClick={handleSlide} src={close} alt="close button" />
-                    <ul className='listItem' >
-                        <li onClick={handleSlide} >  <NavLink to='/'> <span>00</span> HOME</NavLink> </li>
-                        <li onClick={handleSlide} >  <NavLink to='/destination'> <span>01</span> DESTINATION</NavLink> </li>
-                        <li onClick={handleSlide} > <NavLink to='/crew'> <span>02</span> CREW</NavLink> </li>
-                        <li onClick={handleSlide} >  <NavLink to='/technology'> <span>03</span> TECHNOLOGY</NavLink> </li>
-                    </ul>
-
-                </div>
+        <div className="navHead">
+            <div className="header">
+                <Link to='/'> <img src={logo} alt="logo" onClick={handleSlide} /></Link>
+                <img onClick={() => setSlide(true)} src={hamburger} alt="hamburger" />
             </div>
-       
+            <div className="line"></div>
+            <div className={`slideMenu ${slide ? "slideOn" : " "} `}>
+                <img onClick={handleSlide} src={close} alt="close button" />
+                <ul className='listItem' >
+                    <li onClick={handleSlide} >  <NavLink exact to='/'> <span>00</span> HOME</NavLink> </li>
+                    <li onClick={handleSlide} >  <NavLink to='/destination'> <span>01</span> DESTINATION</NavLink> </li>
+                    <li onClick={handleSlide} > <NavLink to='/crew'> <span>02</span> CREW</NavLink> </li>
+                    <li onClick={handleSlide} >  <NavLink to='/technology'> <span>03</span> TECHNOLOGY</NavLink> </li>
+                </ul>
+
+            </div>
+        </div>
+
 
 
     )

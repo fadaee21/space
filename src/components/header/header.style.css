@@ -62,7 +62,7 @@
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 2.7px;
-  transition: font-weight 0.1s;
+  transition: all 0.1s;
 }
 a:hover {
   color: #72839e !important;
@@ -85,8 +85,8 @@ li span {
   .navHead {
     top: 24px;
   }
-  .header{
-    padding-left: .9375rem;
+  .header {
+    padding-left: 0.9375rem;
   }
   .header > :first-child img {
     width: 48px;
@@ -166,5 +166,4 @@ li span {
     opacity: 0.25;
     z-index: 5;
   }
-  
 }

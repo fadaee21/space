@@ -76,6 +76,10 @@
   border-radius: 50%;
   margin: 1rem;
   padding-top: 9px;
+  transition: all 0.3s;
+}
+.number span:hover {
+  border: 1px solid #fff;
 }
 
 .active-num {

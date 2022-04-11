@@ -42,6 +42,11 @@
   height: 170px;
   border-radius: 50%;
   box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+  transition: all 5s;
+}
+.img:hover {
+  transform: rotate(-1deg)  translate(1%,-2%);
+
 }
 
 .nav-dest {
@@ -68,7 +73,12 @@
   text-decoration: none;
   margin: 13px;
   padding-bottom: 8px;
+  transition: color 0.1s;
 }
+.nav-dest a:hover {
+  border-bottom: 1px solid #ffffff50;
+  color: #ffffff50;
+  }
 
 .part2-dest {
   display: flex;
@@ -133,7 +143,10 @@
 }
 
 .active {
-  border-bottom: 3px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.active:hover {
+  color: #fff !important;
 }
 
 @media screen and (min-width: 576px) {

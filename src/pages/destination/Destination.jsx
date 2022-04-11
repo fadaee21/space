@@ -38,7 +38,9 @@ export const Destination = () => {
             <ul className='nav-dest'>
               {data.map((item) => {
                 const { id, name } = item;
-                return <li key={id} >  <NavLink to={`/destination/${name}`} onClick={() => setImageName(name)} >{name}</NavLink> </li>
+                return <li key={id} >  <NavLink to={`/destination/${name}`} onClick={() => setImageName(name)} 
+                className='nvl'
+                >{name}</NavLink> </li>
               })}
             </ul>
             <Switch>
